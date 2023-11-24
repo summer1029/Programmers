@@ -1,0 +1,8 @@
+def solution(numbers):
+    sum = 0
+    if(len(numbers) >= 1 and len(numbers) <= 100) :
+        for i in range(len(numbers)) :
+            if (numbers[i] >= 0 and numbers[i] <= 1000) :
+                sum = sum + numbers[i]
+        answer = sum / len(numbers)
+    return answer
